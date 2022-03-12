@@ -41,3 +41,12 @@ class onSwitchOffCommand {
 		this.engine.off();
 	}
 };
+
+const engine= new Engine()
+console.log(engine);
+
+const onStartCommand = new OnStartCommand(engine)
+const driver = new Driver(onStartCommand)
+driver.execute()
+console.log(engine);
+
